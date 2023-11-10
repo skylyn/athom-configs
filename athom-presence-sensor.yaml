@@ -100,6 +100,8 @@ binary_sensor:
     on_press:
       then:
         - light.turn_on: led
+        - delay: 0.5s
+        - light.turn_off: led
 
   - platform: gpio
     pin:
