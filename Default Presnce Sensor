@@ -1,0 +1,17 @@
+substitutions:
+  name: athom-presence-sensor-9bcd1b
+  friendly_name: Office Presence
+packages:
+  Athom_Technology.Presence_Sensor: github://athom-tech/athom-configs/athom-presence-sensor.yaml
+esphome:
+  name: ${name}
+  name_add_mac_suffix: false
+  friendly_name: ${friendly_name}
+api:
+  encryption:
+    key: 3nIzR2v3MLotgB5Gjs1oBTGDTK7jmxnw+DKNzUTpj3Y=
+
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
